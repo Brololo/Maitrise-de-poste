@@ -6,8 +6,8 @@
 
 🌞 Déterminer les principales informations de votre machine
 
-- nom de la machine
-- OS et version
-- architecture processeur (32-bit, 64-bit, ARM, etc)
-- modèle du processeur
-- quantité RAM et modèle de la RAM
+1. nom de la machine
+2. OS et version
+3. architecture processeur (32-bit, 64-bit, ARM, etc)
+4. modèle du processeur
+5. quantité RAM et modèle de la RAM
