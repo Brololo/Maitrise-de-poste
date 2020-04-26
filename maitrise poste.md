@@ -7,6 +7,12 @@
 🌞 Déterminer les principales informations de votre machine
 
 1. nom de la machine
+
+```
+PS C:\Windows\system32> HOSTNAME.EXE
+DESKTOP-94B3TGJ
+```
+
 2. OS et version
 3. architecture processeur (32-bit, 64-bit, ARM, etc)
 4. modèle du processeur
