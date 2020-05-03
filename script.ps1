@@ -70,4 +70,4 @@ $(Get-VolumeDisk)
 "Users : $(Get-Users)"
 $(Get-PingTimestamp)
 
-#Sponsorisé Par Ianis je vais pas mentir.
+#Sponsorisé Par Ianis je vais pas mentir ses fonction sont quand même ultra cools.
