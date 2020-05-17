@@ -252,3 +252,42 @@ L'objectif de cette partie est de manipuler un langage de script natif à votre 
   - lock l'écran
   - éteindre le PC
 - après X secondes
+
+## Gestion de softs
+
+Tous les OS modernes sont équipés ou peuvent être équipés d'un gestionnaire de paquets. Par exemple :
+
+apt pour les GNU/Linux issus de Debian
+
+dnf pour les GNU/Linux issus de RedHat
+
+brew pour macOS
+
+chocolatey pour Windows
+
+🌞 Expliquer l'intérêt de l'utilisation d'un gestionnaire de paquets
+
+par rapport au téléchargement en direct sur internet
+penser à l'identité des gens impliqués dans un téléchargement (vous, l'éditeur logiciel, etc.)
+penser à la sécurité globale impliquée lors d'un téléchargement
+
+🌞 Utiliser un gestionnaire de paquet propres à votre OS pour
+
+lister tous les paquets déjà installés
+déterminer la provenance des paquets (= quel serveur nous délivre les paquets lorsqu'on installe quelque chose)
+
+## Partage de fichiers
+
+```
+Je fais clic droit sur le document puis "partager" et il m'ouvre une fenêtre avec les outils qui peuvent utiliser le document dont le mail. Pas de samba je sais pas quoi là.
+```
+
+## Chiffrement de mails
+
+```
+Je vais sur mon mail je demande de créer un nouveau mail et je clique sur "chiffrer le mail".
+
+Sinon on fait un algo de chiffrement et de déchiffrement "une clé" par exemple le chiffre de césar, on donne la clé au receveur et avant d'envoyer le message on l'envoi dans l'algo de chiffrement, puis on envoie le résultat et le receveur passe le message dans l'algo de déchiffrement et il obtient le message initial.
+
+Pour encore plus de sécurité on peut utiliser une signature alors c'est dommage que sur le mail de l'école "l'admin" nous bloque l'accès et que sur mon mail perso je peux pas accéder aux options de S/MIME donc je peux pas le faire mais ça consiste à rajouter une signature comme si on faisait un chèque et ça prouve que le mail viens bien de nous.
+```
