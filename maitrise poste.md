@@ -265,16 +265,17 @@ brew pour macOS
 
 chocolatey pour Windows
 
-🌞 Expliquer l'intérêt de l'utilisation d'un gestionnaire de paquets
+_Expliquer l'intérêt de l'utilisation d'un gestionnaire de paquets:_
+Un gestionnaire de paquet permet d'installer des logiciels, de les désinstaller et de les mettre à jour en une seule commande. Tous ces paquets sont centralisés dans un seul dépôt ce qui permet de ne pas parcourir le web pour une seule installation. Tous les logiciels sont dépourvus de malwares. Les dépendances sont automatiquement installées.
 
-par rapport au téléchargement en direct sur internet
-penser à l'identité des gens impliqués dans un téléchargement (vous, l'éditeur logiciel, etc.)
-penser à la sécurité globale impliquée lors d'un téléchargement
+_Utiliser un gestionnaire de paquet propres à votre OS pour_:
 
-🌞 Utiliser un gestionnaire de paquet propres à votre OS pour
-
-lister tous les paquets déjà installés
-déterminer la provenance des paquets (= quel serveur nous délivre les paquets lorsqu'on installe quelque chose)
+```powershell
+PS C:\WINDOWS\system32> choco list -l
+Chocolatey v0.10.15
+chocolatey 0.10.15
+1 packages installed.
+```
 
 ## Partage de fichiers
 
@@ -291,3 +292,46 @@ Sinon on fait un algo de chiffrement et de déchiffrement "une clé" par exemple
 
 Pour encore plus de sécurité on peut utiliser une signature alors c'est dommage que sur le mail de l'école "l'admin" nous bloque l'accès et que sur mon mail perso je peux pas accéder aux options de S/MIME donc je peux pas le faire mais ça consiste à rajouter une signature comme si on faisait un chèque et ça prouve que le mail viens bien de nous.
 ```
+
+---
+
+LE RESTE VIENS DE IANIS DONC SI TU AS UNE IMPRESSION DE DEJA VU C EST NORMAL.
+
+#### SSH
+
+##### Client
+
+_Générer une nouvelle paire de clés SSH:_
+
+```powershell
+ssh-keygen
+```
+
+_Déposer la clé nécessaire sur le serveur pour pouvoir vous y connecter:_
+On met la clé publique dans un fichier ~/.ssh/authorized_keys.
+
+_Expliquer tout ce qui est nécessaire pour se connecter avec un échange de clés, en ce qui concerne le client:_
+
+- quelle(s) clé(s) sont générée(s) ? Comment ?
+  Les clés privées et publiques sont générées grace à un chiffrement basé sur des clés asymétriques.
+- quelle clé est déposée ? Pourquoi pas l'autre ?
+  La clé déposée est la clé publique. On dépose celle ci parce que c'est la norme et pour une autre raison que tu avais expliqué dans un cours bonus mais j'ai zapé.
+- à quoi ça sert précisément de déposer cette clé sur le serveur distant, qu'est-ce qu'il va pouvoir faire, précisément avec ?
+  Cela permettra de déchiffrer les paquets envoyés par le client.
+- dans quel fichier est stocké la clé ? Quelles permissions sur ce fichier ?
+  ~/.ssh/authorized_keys avec les permissions -rw-------
+
+_Le fingerprint SSH:_
+C'est pour une identification / vérification facile de l'hôte auquel on se connecte
+
+\*Créer un fichier ~/.ssh/config et y définir une connexion:
+
+#### SSH avancé
+
+##### SSH tunnels
+
+_Mettez en place un serveur Web dans une VM:_
+
+##### SSH jumps
+
+#### Forwarding de ports at home
